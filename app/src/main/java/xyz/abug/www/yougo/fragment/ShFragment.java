@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import xyz.abug.www.yougo.R;
 
@@ -16,11 +17,32 @@ import xyz.abug.www.yougo.R;
 
 public class ShFragment extends Fragment {
     private View mView;
+    private ImageView mImgBack;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_shouhou, container, false);
         return mView;
+    }
+
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initView();
+    }
+
+    /**
+     * 绑定id
+     */
+    private void initView() {
+        mImgBack = mView.findViewById(R.id.frag_sh_img_back);
+        mImgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().finish();
+            }
+        });
     }
 }
