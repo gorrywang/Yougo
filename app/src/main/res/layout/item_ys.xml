@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="65dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingLeft="8dp">
@@ -22,14 +24,16 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:text="运输中"
-            android:textColor="@color/important_title" />
+            android:textColor="@color/important_title"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="深圳 已发出"
-            android:textColor="@color/tip_font" />
+            android:textColor="@color/tip_font"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>

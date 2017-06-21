@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private int mPositionNum = 0;
     //男装女装童装
     private RelativeLayout mRelaWoman, mRelaMan, mRelaChild;
-    private DrawerLayout mDrawerLayout;
+    private static DrawerLayout mDrawerLayout;
     private ImageView mImgMenu;
     private FloatingActionButton mFloatBtn;
 
@@ -181,5 +181,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                 Toast.makeText(MainActivity.this, "哈哈", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+
+    public static void closeDrawer() {
+        mDrawerLayout.closeDrawer(GravityCompat.START);
     }
 }

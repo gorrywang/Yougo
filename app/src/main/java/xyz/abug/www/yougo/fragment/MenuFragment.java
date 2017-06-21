@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import xyz.abug.www.yougo.R;
+import xyz.abug.www.yougo.activity.MainActivity;
 import xyz.abug.www.yougo.activity.MenuContentActivity;
 
 /**
@@ -59,6 +60,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(getContext(), MenuContentActivity.class);
+        MainActivity.closeDrawer();
         switch (view.getId()) {
             case R.id.frag_menu_shoucang:
                 //收藏
