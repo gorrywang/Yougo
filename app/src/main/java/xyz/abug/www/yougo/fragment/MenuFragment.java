@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import xyz.abug.www.yougo.R;
@@ -22,6 +23,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
     private View mView;
     private TextView mTxtShoucang, mTxtXiaoxi, mTxtYouhuiquan, mTxtShouhou, mTxtDizhi, mTxtSetting;
     private Button mFinishBtn;
+    private LinearLayout mLinearDfk , mLinearDsh ,mLinearQbdd;
 
     @Nullable
     @Override
@@ -47,6 +49,12 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
         mTxtDizhi = mView.findViewById(R.id.frag_menu_shouhuodizhi);
         mTxtSetting = mView.findViewById(R.id.frag_menu_setting);
         mFinishBtn = mView.findViewById(R.id.frag_menu_btn_finish);
+        mLinearDfk = mView.findViewById(R.id.frag_menu_linear_daifukuan);
+        mLinearDsh = mView.findViewById(R.id.frag_menu_linear_daishouhuo);
+        mLinearQbdd = mView.findViewById(R.id.frag_menu_linear_quanbu);
+        mLinearDfk.setOnClickListener(this);
+        mLinearDsh.setOnClickListener(this);
+        mLinearQbdd.setOnClickListener(this);
         mTxtShoucang.setOnClickListener(this);
         mTxtXiaoxi.setOnClickListener(this);
         mTxtYouhuiquan.setOnClickListener(this);
@@ -101,6 +109,21 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
             case R.id.frag_menu_btn_finish:
                 //退出
                 getActivity().finish();
+                break;
+            case R.id.frag_menu_linear_daifukuan:
+                //待付款
+                intent.putExtra("data", 6);
+                startActivity(intent);
+                break;
+            case R.id.frag_menu_linear_daishouhuo:
+                //待收货
+                intent.putExtra("data", 7);
+                startActivity(intent);
+                break;
+            case R.id.frag_menu_linear_quanbu:
+                //全部订单
+                intent.putExtra("data", 8);
+                startActivity(intent);
                 break;
 
         }

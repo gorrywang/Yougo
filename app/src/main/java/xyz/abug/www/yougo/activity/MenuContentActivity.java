@@ -8,6 +8,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import xyz.abug.www.yougo.R;
+import xyz.abug.www.yougo.fragment.DfkFragment;
+import xyz.abug.www.yougo.fragment.DshFragment;
+import xyz.abug.www.yougo.fragment.QbddFragment;
 import xyz.abug.www.yougo.fragment.ScFragment;
 import xyz.abug.www.yougo.fragment.SetFragment;
 import xyz.abug.www.yougo.fragment.ShFragment;
@@ -73,6 +76,21 @@ public class MenuContentActivity extends AppCompatActivity {
             case 5:
                 //设置
                 fragment = new SetFragment();
+                mTran.replace(R.id.ac_menucontent_frame, fragment);
+                break;
+            case 6:
+                //待付款
+                fragment = new DfkFragment();
+                mTran.replace(R.id.ac_menucontent_frame, fragment);
+                break;
+            case 7:
+                //待收货
+                fragment = new DshFragment();
+                mTran.replace(R.id.ac_menucontent_frame, fragment);
+                break;
+            case 8:
+                //全部订单
+                fragment = new QbddFragment();
                 mTran.replace(R.id.ac_menucontent_frame, fragment);
                 break;
         }

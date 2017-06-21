@@ -63,6 +63,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/frag_menu_linear_daifukuan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -91,6 +92,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/frag_menu_linear_daishouhuo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -119,6 +121,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/frag_menu_linear_quanbu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
