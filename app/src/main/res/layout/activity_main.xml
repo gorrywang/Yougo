@@ -1,185 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ac_main_drawer_show"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="xyz.abug.www.yougo.activity.MainActivity">
-    <!--标题-->
-    <include layout="@layout/item_title" />
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none">
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ac_main_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+            <!--标题-->
+            <include layout="@layout/item_title" />
 
-            <!--图片滑动-->
-            <RelativeLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
-
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/ac_main_pager_show"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
 
                 <LinearLayout
-                    android:id="@+id/ac_main_linear_position"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:orientation="horizontal" />
-            </RelativeLayout>
-
-            <!--男装女装童装-->
-            <RelativeLayout
-                android:id="@+id/ac_main_rela_woman"
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginRight="@dimen/main_padding"
-                android:layout_marginTop="@dimen/main_padding">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#7565ae" />
-
-                <ImageView
-                    android:id="@+id/ac_main_img_1"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:src="@mipmap/ic_launcher" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@+id/ac_main_img_1"
-                    android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="18dp"
-                        android:text="女 装"
-                        android:textColor="#ffffff"
-                        android:textSize="@dimen/wz_36" />
+                    <!--图片滑动-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="穿 出 优 雅 倾 城 的 气 质"
-                        android:textColor="#ffffff" />
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/ac_main_pager_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:id="@+id/ac_main_linear_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                    <!--男装女装童装-->
+                    <RelativeLayout
+                        android:id="@+id/ac_main_rela_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="@dimen/main_padding"
+                        android:layout_marginRight="@dimen/main_padding"
+                        android:layout_marginTop="@dimen/main_padding">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#7565ae" />
+
+                        <ImageView
+                            android:id="@+id/ac_main_img_1"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/ac_main_img_1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="女 装"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/wz_36" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="穿 出 优 雅 倾 城 的 气 质"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ac_main_rela_man"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="@dimen/main_padding"
+                        android:layout_marginRight="@dimen/main_padding">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#596273" />
+
+                        <ImageView
+                            android:id="@+id/ac_main_img_2"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/ac_main_img_2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="男 装"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/wz_36" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="只 为 打 造 更 有 魅 力 的 你"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/ac_main_rela_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginBottom="@dimen/main_padding"
+                        android:layout_marginLeft="@dimen/main_padding"
+                        android:layout_marginRight="@dimen/main_padding">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#7ec4ff" />
+
+                        <ImageView
+                            android:id="@+id/ac_main_img_3"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/ac_main_img_3"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="童 装"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/wz_36" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="专 注 儿 童 时 尚 搭 配"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
                 </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/ac_main_rela_man"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginRight="@dimen/main_padding">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#596273" />
-
-                <ImageView
-                    android:id="@+id/ac_main_img_2"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
-                    android:src="@mipmap/ic_launcher" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toLeftOf="@+id/ac_main_img_2"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="18dp"
-                        android:text="男 装"
-                        android:textColor="#ffffff"
-                        android:textSize="@dimen/wz_36" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="只 为 打 造 更 有 魅 力 的 你"
-                        android:textColor="#ffffff" />
-                </LinearLayout>
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/ac_main_rela_child"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginBottom="@dimen/main_padding"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginRight="@dimen/main_padding">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#7ec4ff" />
-
-                <ImageView
-                    android:id="@+id/ac_main_img_3"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_alignParentBottom="true"
-                    android:src="@mipmap/ic_launcher" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@+id/ac_main_img_3"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="18dp"
-                        android:text="童 装"
-                        android:textColor="#ffffff"
-                        android:textSize="@dimen/wz_36" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="专 注 儿 童 时 尚 搭 配"
-                        android:textColor="#ffffff" />
-                </LinearLayout>
-
-            </RelativeLayout>
-
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
 
+    </RelativeLayout>
 
-</LinearLayout>
+    <!--滑动-->
+    <fragment
+        android:id="@+id/ac_main_frag_menu"
+        android:name="xyz.abug.www.yougo.fragment.MenuFragment"
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

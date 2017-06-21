@@ -4,8 +4,8 @@
     <dimen name="main_padding_x2">16dp</dimen>
 
 
-    <dimen name="wz_36">36sp</dimen>
-    <dimen name="wz_30">30sp</dimen>
-    <dimen name="wz_24">24sp</dimen>
-    <dimen name="wz_22">22sp</dimen>
+    <dimen name="wz_36">30sp</dimen>
+    <dimen name="wz_30">24sp</dimen>
+    <dimen name="wz_24">18sp</dimen>
+    <dimen name="wz_22">16sp</dimen>
 </resources>

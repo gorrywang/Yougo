@@ -2,7 +2,10 @@ package xyz.abug.www.yougo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private int mPositionNum = 0;
     //男装女装童装
     private RelativeLayout mRelaWoman, mRelaMan, mRelaChild;
+    private DrawerLayout mDrawerLayout;
+    private ImageView mImgMenu;
+    private FloatingActionButton mFloatBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,6 +115,11 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         mRelaWoman = (RelativeLayout) findViewById(R.id.ac_main_rela_woman);
         mRelaMan = (RelativeLayout) findViewById(R.id.ac_main_rela_man);
         mRelaChild = (RelativeLayout) findViewById(R.id.ac_main_rela_child);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.ac_main_drawer_show);
+        mImgMenu = (ImageView) findViewById(R.id.item_title_img_left);
+        mFloatBtn = (FloatingActionButton) findViewById(R.id.ac_main_float);
+        mFloatBtn.setOnClickListener(this);
+        mImgMenu.setOnClickListener(this);
         mViewPager.addOnPageChangeListener(this);
         mRelaWoman.setOnClickListener(this);
         mRelaMan.setOnClickListener(this);
@@ -145,20 +156,30 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                 //女装
                 Toast.makeText(MainActivity.this, "女装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 0);
+                startActivity(intent);
                 break;
 
             case R.id.ac_main_rela_man:
                 //男装
                 Toast.makeText(MainActivity.this, "男装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 1);
+                startActivity(intent);
                 break;
 
             case R.id.ac_main_rela_child:
                 //童装
                 Toast.makeText(MainActivity.this, "童装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 2);
+                startActivity(intent);
+                break;
+            case R.id.item_title_img_left:
+                //打开菜单
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                break;
+            case R.id.ac_main_float:
+                //浮动菜单
+                Toast.makeText(MainActivity.this, "哈哈", Toast.LENGTH_SHORT).show();
                 break;
         }
-        startActivity(intent);
     }
 }
