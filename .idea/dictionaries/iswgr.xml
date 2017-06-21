@@ -2,14 +2,24 @@
   <dictionary name="iswgr">
     <words>
       <w>abug</w>
+      <w>cang</w>
+      <w>dizhi</w>
       <w>fengexian</w>
       <w>iswgr</w>
+      <w>menucontent</w>
       <w>nanzhuang</w>
       <w>partingline</w>
       <w>rela</w>
+      <w>shdz</w>
+      <w>shou</w>
+      <w>shoucang</w>
       <w>shouchu</w>
+      <w>shouhou</w>
+      <w>shouhuodizhi</w>
+      <w>xiaoxi</w>
       <w>yishou</w>
       <w>yougo</w>
+      <w>youhuiquan</w>
       <w>zhongyaobiaoti</w>
     </words>
   </dictionary>

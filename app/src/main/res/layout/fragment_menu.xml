@@ -136,9 +136,12 @@
 
             <!--4-->
             <TextView
+                android:id="@+id/frag_menu_shoucang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="我的收藏"
@@ -146,8 +149,11 @@
                 android:textSize="@dimen/wz_24" />
 
             <TextView
+                android:id="@+id/frag_menu_xiaoxi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="我的消息"
@@ -155,8 +161,11 @@
                 android:textSize="@dimen/wz_24" />
 
             <TextView
+                android:id="@+id/frag_menu_youhuiquan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="我的优惠券"
@@ -164,8 +173,11 @@
                 android:textSize="@dimen/wz_24" />
 
             <TextView
+                android:id="@+id/frag_menu_shouhou"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="退款/售后"
@@ -173,8 +185,11 @@
                 android:textSize="@dimen/wz_24" />
 
             <TextView
+                android:id="@+id/frag_menu_shouhuodizhi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="收货地址"
@@ -182,8 +197,11 @@
                 android:textSize="@dimen/wz_24" />
 
             <TextView
+                android:id="@+id/frag_menu_setting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="设置"
@@ -193,6 +211,7 @@
 
             <!--5-->
             <Button
+                android:id="@+id/frag_menu_btn_finish"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
