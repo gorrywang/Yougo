@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/item_xx_img_back"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:padding="4dp"
+        android:scaleType="center"
+        android:src="@drawable/nvzhuang" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="耐克运动鞋专卖店"
+            android:textColor="@color/important_title"
+            android:textSize="@dimen/wz_22" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你好，这款鞋有相同类似的吗?"
+            android:textColor="@color/tip_font"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
