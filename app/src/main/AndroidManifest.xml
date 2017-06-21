@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.ShopActivity" />
         <activity android:name=".activity.MenuContentActivity" />
-        <activity android:name=".activity.SplashActivity"></activity>
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".activity.MoneyActivity"></activity>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -158,6 +159,13 @@ public class ShopActivity extends AppCompatActivity implements View.OnClickListe
             holder.textName.setText(vo.getName());
             holder.textMoney.setText("￥:" + vo.getMoney());
             holder.textSc.setText("已售出:" + vo.getShouchu());
+            holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(ShopActivity.this, MoneyActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
 
         //数量
@@ -171,10 +179,12 @@ public class ShopActivity extends AppCompatActivity implements View.OnClickListe
             //行布局中的控件
             ImageView img;
             TextView textName, textMoney, textSc;
+            LinearLayout linearLayout;
 
             public ViewHolder(View itemView) {
                 super(itemView);
                 //绑定控件
+                linearLayout = itemView.findViewById(R.id.item_show_linear);
                 img = itemView.findViewById(R.id.item_show_img);
                 textName = itemView.findViewById(R.id.item_show_txt_name);
                 textMoney = itemView.findViewById(R.id.item_show_txt_money);
