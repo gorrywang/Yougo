@@ -23,7 +23,8 @@
         <activity android:name=".activity.SplashActivity" />
         <activity android:name=".activity.MoneyActivity" />
         <activity android:name=".activity.SearchActivity" />
-        <activity android:name=".activity.CarActivity"></activity>
+        <activity android:name=".activity.CarActivity" />
+        <activity android:name=".activity.PayActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package xyz.abug.www.yougo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import xyz.abug.www.yougo.R;
 
@@ -16,6 +18,7 @@ public class MoneyActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
     private ImageView mImgBack;
     private Integer[] mList = new Integer[]{1, 1, 1, 1, 1, 1, 1, 1};
+    private TextView mTextPay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +48,16 @@ public class MoneyActivity extends AppCompatActivity {
      * 初始化id
      */
     private void initView() {
+        mTextPay = (TextView) findViewById(R.id.ac_money_text_pay);
         mRecycler = (RecyclerView) findViewById(R.id.ac_money_recycler);
         mImgBack = (ImageView) findViewById(R.id.ac_money_img_back);
+        mTextPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MoneyActivity.this, CarActivity.class);
+                startActivity(intent);
+            }
+        });
         mImgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
