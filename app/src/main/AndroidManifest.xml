@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +21,9 @@
         <activity android:name=".activity.ShopActivity" />
         <activity android:name=".activity.MenuContentActivity" />
         <activity android:name=".activity.SplashActivity" />
-        <activity android:name=".activity.MoneyActivity"></activity>
+        <activity android:name=".activity.MoneyActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.CarActivity"></activity>
     </application>
 
 </manifest>

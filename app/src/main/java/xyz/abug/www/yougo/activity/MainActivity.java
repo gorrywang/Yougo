@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private static DrawerLayout mDrawerLayout;
     private ImageView mImgMenu;
     private FloatingActionButton mFloatBtn;
+    //搜索
+    private ImageView mSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
      */
 
     private void initView() {
+        mSearchView = (ImageView) findViewById(R.id.item_title_img_search);
         mViewPager = (ViewPager) findViewById(R.id.ac_main_pager_show);
         mLinearPosition = (LinearLayout) findViewById(R.id.ac_main_linear_position);
         mRelaWoman = (RelativeLayout) findViewById(R.id.ac_main_rela_woman);
@@ -118,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         mDrawerLayout = (DrawerLayout) findViewById(R.id.ac_main_drawer_show);
         mImgMenu = (ImageView) findViewById(R.id.item_title_img_left);
         mFloatBtn = (FloatingActionButton) findViewById(R.id.ac_main_float);
+        mSearchView.setOnClickListener(this);
         mFloatBtn.setOnClickListener(this);
         mImgMenu.setOnClickListener(this);
         mViewPager.addOnPageChangeListener(this);
@@ -178,7 +182,16 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                 break;
             case R.id.ac_main_float:
                 //浮动菜单
-                Toast.makeText(MainActivity.this, "哈哈", Toast.LENGTH_SHORT).show();
+                intent = null;
+                intent = new Intent(MainActivity.this, CarActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.item_title_img_search:
+                //搜索
+                intent = null;
+                intent = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
                 break;
         }
     }

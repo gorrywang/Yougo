@@ -2,7 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ff00"
+    android:background="#f5f1ff"
     android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/main_padding"
+        android:paddingRight="@dimen/main_padding">
+
+
+        <ImageView
+            android:id="@+id/frag_shdz_img_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="收货地址"
+            android:textColor="@color/important_title"
+            android:textSize="@dimen/wz_24" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/item_shdz" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/item_shdz" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/item_shdz" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="新增地址"
+        android:textColor="#ffffff" />
 
 </LinearLayout>

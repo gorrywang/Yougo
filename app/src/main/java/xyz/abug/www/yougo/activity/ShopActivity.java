@@ -2,6 +2,7 @@ package xyz.abug.www.yougo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -25,6 +26,7 @@ public class ShopActivity extends AppCompatActivity implements View.OnClickListe
     private List<ShopVO> mShopList = new ArrayList<>();
     private MyAdapter mMyAdapter;
     private RecyclerView mRecycler;
+    private FloatingActionButton mFloat;
 
 
     @Override
@@ -119,8 +121,10 @@ public class ShopActivity extends AppCompatActivity implements View.OnClickListe
         mImgBack = (ImageView) findViewById(R.id.item_title_img_left);
         mTxtTitle = (TextView) findViewById(R.id.item_title_txt_title);
         mRecycler = (RecyclerView) findViewById(R.id.ac_shop_recycler_show);
+        mFloat = (FloatingActionButton) findViewById(R.id.ac_shop_float);
         mImgBack.setImageResource(R.drawable.back);
         mImgBack.setOnClickListener(this);
+        mFloat.setOnClickListener(this);
 
     }
 
@@ -130,6 +134,11 @@ public class ShopActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.item_title_img_left:
                 //返回
                 finish();
+                break;
+            case R.id.ac_shop_float:
+                //购物车
+                Intent intent = new Intent(ShopActivity.this, CarActivity.class);
+                startActivity(intent);
                 break;
         }
     }

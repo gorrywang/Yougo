@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f1ff"
+    android:orientation="vertical"
+    tools:context="xyz.abug.www.yougo.activity.SearchActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/main_padding"
+        android:paddingRight="@dimen/main_padding">
+
+
+        <ImageView
+            android:id="@+id/ac_search_img_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/item_title_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:hint="请输入搜索内容"
+                android:paddingLeft="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/yuan2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_title_img_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuan3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="历史搜索"
+            android:textColor="@color/tip_font" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
