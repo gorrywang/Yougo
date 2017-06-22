@@ -5,15 +5,23 @@
     android:id="@+id/item_ys_linear_show"
     android:background="?android:attr/selectableItemBackground"
     android:clickable="true"
+    android:layout_marginLeft="4dp"
     android:gravity="center_vertical"
-    android:orientation="horizontal"
-    android:paddingLeft="8dp">
+    android:orientation="horizontal">
 
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="8dp"
         android:src="@drawable/man_yf_1" />
+
+    <View
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/sec_title"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,15 +34,15 @@
             android:paddingBottom="4dp"
             android:text="运输中"
             android:textColor="@color/important_title"
-            android:textSize="14sp" />
+            android:textSize="@dimen/wz_16" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="深圳 已发出"
-            android:textColor="@color/tip_font"
-            android:textSize="14sp" />
+            android:textColor="@color/sec_title"
+            android:textSize="@dimen/wz_14" />
     </LinearLayout>
 
 </LinearLayout>

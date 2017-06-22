@@ -14,4 +14,6 @@
     <color name="sec_title">#666666</color>
     <!--辅助文字-->
     <color name="tip_font">#999999</color>
+    <!--背景-->
+    <color name="background_color">#f5f1ff</color>
 </resources>
