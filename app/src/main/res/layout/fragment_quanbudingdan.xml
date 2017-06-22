@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/frag_sh_img_back"
+            android:id="@+id/frag_qbdd_img_back"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_alignParentLeft="true"
@@ -25,11 +25,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="待付款"
+            android:text="全部订单"
             android:textColor="@color/important_title"
             android:textSize="@dimen/wz_20" />
 
     </RelativeLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/item_qbdd" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/item_qbdd" />
 
 
 

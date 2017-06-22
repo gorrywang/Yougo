@@ -51,12 +51,12 @@
             android:layout_weight="1"
             android:text="接受通知"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -77,12 +77,12 @@
             android:layout_weight="1"
             android:text="修改密码"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -103,12 +103,12 @@
             android:layout_weight="1"
             android:text="关于我们"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -130,12 +130,12 @@
             android:layout_weight="1"
             android:text="更换账户"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -157,12 +157,12 @@
             android:layout_weight="1"
             android:text="清除缓存"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
 </LinearLayout>

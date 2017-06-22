@@ -16,7 +16,7 @@
 
 
         <ImageView
-            android:id="@+id/frag_sh_img_back"
+            android:id="@+id/ac_kd_img_back"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_alignParentLeft="true"

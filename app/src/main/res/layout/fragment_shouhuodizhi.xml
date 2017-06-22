@@ -60,6 +60,7 @@
         android:background="@color/main"
         android:gravity="center"
         android:padding="16dp"
+        android:textSize="@dimen/wz_18"
         android:text="新增地址"
         android:textColor="#ffffff" />
 

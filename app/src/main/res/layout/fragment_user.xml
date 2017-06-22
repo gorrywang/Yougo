@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:text="修改头像"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="30dp"
@@ -62,9 +62,9 @@
             app:civ_border_width="2dp" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -85,19 +85,19 @@
             android:layout_weight="1"
             android:text="修改昵称"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lay"
             android:textColor="@color/tip_font"
-            android:textSize="14sp" />
+            android:textSize="@dimen/wz_14" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -118,19 +118,19 @@
             android:layout_weight="1"
             android:text="性别"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="男"
             android:textColor="@color/tip_font"
-            android:textSize="14sp" />
+            android:textSize="@dimen/wz_14" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
     <View
@@ -152,19 +152,19 @@
             android:layout_weight="1"
             android:text="生日"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1996.12.18"
             android:textColor="@color/tip_font"
-            android:textSize="14sp" />
+            android:textSize="@dimen/wz_14" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/back" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/right" />
     </LinearLayout>
 
 </LinearLayout>

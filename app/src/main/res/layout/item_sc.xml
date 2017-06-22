@@ -26,14 +26,14 @@
             android:layout_weight="1"
             android:text="白色连衣裙 长袖小白裙"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="￥188"
             android:textColor="@color/tip_font"
-            android:textSize="14sp" />
+            android:textSize="@dimen/wz_14" />
     </LinearLayout>
 
 

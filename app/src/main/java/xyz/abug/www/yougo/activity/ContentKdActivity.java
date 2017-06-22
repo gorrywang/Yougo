@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class ContentKdActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private List<TraceBean> mList = new ArrayList<>();
     private MyAdapter mMyAdapter;
+    private ImageView mImgBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,13 @@ public class ContentKdActivity extends AppCompatActivity {
      */
     private void initView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.ac_contentkd_recycler_show);
+        mImgBack = (ImageView) findViewById(R.id.ac_kd_img_back);
+        mImgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     /**
