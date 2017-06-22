@@ -16,6 +16,7 @@
 
 
         <ImageView
+            android:id="@+id/ac_money_img_back"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"

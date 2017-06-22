@@ -7,12 +7,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import xyz.abug.www.yougo.R;
 
 public class MoneyActivity extends AppCompatActivity {
 
     private RecyclerView mRecycler;
+    private ImageView mImgBack;
     private Integer[] mList = new Integer[]{1, 1, 1, 1, 1, 1, 1, 1};
 
     @Override
@@ -44,6 +46,13 @@ public class MoneyActivity extends AppCompatActivity {
      */
     private void initView() {
         mRecycler = (RecyclerView) findViewById(R.id.ac_money_recycler);
+        mImgBack = (ImageView) findViewById(R.id.ac_money_img_back);
+        mImgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     /**
