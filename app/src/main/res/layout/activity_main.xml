@@ -94,7 +94,7 @@
                                 android:layout_marginTop="18dp"
                                 android:text="女 装"
                                 android:textColor="#ffffff"
-                                android:textSize="@dimen/wz_36" />
+                                android:textSize="@dimen/wz_30" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
                                 android:layout_marginTop="18dp"
                                 android:text="男 装"
                                 android:textColor="#ffffff"
-                                android:textSize="@dimen/wz_36" />
+                                android:textSize="@dimen/wz_30" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -187,7 +187,7 @@
                                 android:layout_marginTop="18dp"
                                 android:text="童 装"
                                 android:textColor="#ffffff"
-                                android:textSize="@dimen/wz_36" />
+                                android:textSize="@dimen/wz_30" />
 
                             <TextView
                                 android:layout_width="wrap_content"

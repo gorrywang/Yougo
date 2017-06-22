@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/item_title_img_left"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:src="@drawable/other" />
@@ -22,12 +22,12 @@
         android:gravity="center"
         android:text="首页"
         android:textColor="@color/important_title"
-        android:textSize="@dimen/wz_24" />
+        android:textSize="@dimen/wz_20" />
 
     <ImageView
         android:id="@+id/item_title_img_search"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:src="@drawable/search" />

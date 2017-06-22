@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/frag_set_img_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:src="@drawable/back" />
@@ -28,7 +28,7 @@
             android:gravity="center"
             android:text="设置"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_24" />
+            android:textSize="@dimen/wz_20" />
 
     </RelativeLayout>
 
@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:text="接受通知"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
             android:layout_width="20dp"
@@ -77,7 +77,7 @@
             android:layout_weight="1"
             android:text="修改密码"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
             android:layout_width="20dp"
@@ -103,7 +103,7 @@
             android:layout_weight="1"
             android:text="关于我们"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
             android:layout_width="20dp"
@@ -130,7 +130,7 @@
             android:layout_weight="1"
             android:text="更换账户"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
             android:layout_width="20dp"
@@ -157,7 +157,7 @@
             android:layout_weight="1"
             android:text="清除缓存"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
             android:layout_width="20dp"

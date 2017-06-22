@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:text="白色连衣裙 长袖小白裙"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <TextView
             android:layout_width="match_parent"

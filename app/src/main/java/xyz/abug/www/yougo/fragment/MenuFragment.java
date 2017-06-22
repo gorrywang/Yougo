@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import xyz.abug.www.yougo.R;
+import xyz.abug.www.yougo.activity.ContentKdActivity;
 import xyz.abug.www.yougo.activity.MainActivity;
 import xyz.abug.www.yougo.activity.MenuContentActivity;
 
@@ -23,7 +24,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
     private View mView;
     private TextView mTxtShoucang, mTxtXiaoxi, mTxtYouhuiquan, mTxtShouhou, mTxtDizhi, mTxtSetting;
     private Button mFinishBtn;
-    private LinearLayout mLinearDfk, mLinearDsh, mLinearQbdd, mLinearUser;
+    private LinearLayout mLinearDfk, mLinearDsh, mLinearQbdd, mLinearUser , mLinaerYs;
 
     @Nullable
     @Override
@@ -53,6 +54,8 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
         mLinearDsh = mView.findViewById(R.id.frag_menu_linear_daishouhuo);
         mLinearQbdd = mView.findViewById(R.id.frag_menu_linear_quanbu);
         mLinearUser = mView.findViewById(R.id.frag_menu_linear_user);
+        mLinaerYs = mView.findViewById(R.id.item_ys_linear_show);
+        mLinaerYs.setOnClickListener(this);
         mLinearUser.setOnClickListener(this);
         mLinearDfk.setOnClickListener(this);
         mLinearDsh.setOnClickListener(this);
@@ -130,6 +133,12 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
             case R.id.frag_menu_linear_user:
                 //用户设置
                 intent.putExtra("data", 9);
+                startActivity(intent);
+                break;
+            case R.id.item_ys_linear_show:
+                //运输
+                intent = null;
+                intent = new Intent(getContext(), ContentKdActivity.class);
                 startActivity(intent);
                 break;
         }

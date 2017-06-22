@@ -30,7 +30,7 @@
                 android:padding="@dimen/main_padding"
                 android:text="你好的方式打开交流方式考虑是否决定是否"
                 android:textColor="@color/important_title"
-                android:textSize="@dimen/wz_22" />
+                android:textSize="@dimen/wz_20" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                     android:padding="@dimen/main_padding"
                     android:text="￥1000"
                     android:textColor="@color/tip_font"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <View
                     android:layout_width="0dp"
@@ -58,7 +58,7 @@
                     android:padding="@dimen/main_padding"
                     android:text="已售:99件"
                     android:textColor="@color/tip_font"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
             </LinearLayout>
 
         </LinearLayout>

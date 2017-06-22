@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/ac_money_img_back"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:src="@drawable/back" />
@@ -29,11 +29,11 @@
             android:gravity="center"
             android:text="男装"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_24" />
+            android:textSize="@dimen/wz_20" />
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:src="@drawable/share" />
@@ -70,7 +70,7 @@
                     android:padding="8dp"
                     android:text="夹克男装春季青年外套男士 休闲上衣潮流大码 立领装夹克衫"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <View
                     android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                         android:lineSpacingExtra="5dp"
                         android:text="￥189"
                         android:textColor="@color/sec_title"
-                        android:textSize="@dimen/wz_22" />
+                        android:textSize="@dimen/wz_20" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
                         android:lineSpacingExtra="5dp"
                         android:text="您有一张满149减10元的优惠券可用"
                         android:textColor="@color/important_title"
-                        android:textSize="@dimen/wz_22" />
+                        android:textSize="@dimen/wz_20" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -200,7 +200,7 @@
                     android:padding="10dp"
                     android:text="颜色"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -263,7 +263,7 @@
                     android:padding="10dp"
                     android:text="尺码"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -398,7 +398,7 @@
                     android:padding="10dp"
                     android:text="用户评价"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -433,7 +433,7 @@
                     android:padding="10dp"
                     android:text="还不错挺好的很喜欢****"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -476,7 +476,7 @@
                     android:padding="8dp"
                     android:text="查看全部评论(1236)"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_22" />
+                    android:textSize="@dimen/wz_20" />
             </LinearLayout>
 
             <View
@@ -557,7 +557,7 @@
             android:gravity="center"
             android:text="加入购物车"
             android:textColor="#ffffff"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
         <TextView
             android:id="@+id/ac_money_text_pay"
@@ -568,7 +568,7 @@
             android:gravity="center"
             android:text="立即购买"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_22" />
+            android:textSize="@dimen/wz_20" />
 
     </LinearLayout>
 
