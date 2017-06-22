@@ -32,12 +32,26 @@
             android:textColor="@color/important_title"
             android:textSize="@dimen/wz_20" />
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <RelativeLayout
+            android:gravity="center"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/trash" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ac_item_img_del"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/trash" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/ac_item_text_cancel"
+                android:layout_width="wrap_content"
+                android:text="删除"
+                android:layout_height="25dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
 
     </RelativeLayout>
 
@@ -45,13 +59,17 @@
         android:layout_width="match_parent"
         android:layout_height="8dp" />
 
-    <include layout="@layout/item_car" />
+    <include
+        android:id="@+id/ac_car_include_1"
+        layout="@layout/item_car" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="8dp" />
 
-    <include layout="@layout/item_car" />
+    <include
+        android:id="@+id/ac_car_include_2"
+        layout="@layout/item_car" />
 
     <View
         android:layout_width="match_parent"
@@ -59,15 +77,20 @@
         android:layout_weight="1" />
 
     <LinearLayout
+        android:id="@+id/ac_car_linear_pay"
+        android:layout_marginLeft="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/success" />
+        <ToggleButton
+            android:id="@+id/ac_car_toggle_q"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/selector_success" />
 
         <TextView
             android:layout_width="0dp"
@@ -76,16 +99,17 @@
             android:gravity="center_vertical"
             android:text="全选"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_24" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
+            android:id="@+id/ac_car_text_money"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="8dp"
             android:gravity="center_vertical"
             android:text="合计:414元"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_24" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:id="@+id/ac_car_text_pay"
@@ -95,7 +119,8 @@
             android:gravity="center"
             android:text="结算(2)"
             android:textColor="#ffffff"
-            android:textSize="@dimen/wz_24" />
+            android:textSize="@dimen/wz_18" />
     </LinearLayout>
+
 
 </LinearLayout>
