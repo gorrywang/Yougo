@@ -70,7 +70,7 @@
                     android:padding="8dp"
                     android:text="夹克男装春季青年外套男士 休闲上衣潮流大码 立领装夹克衫"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_18" />
 
                 <View
                     android:layout_width="match_parent"
@@ -81,7 +81,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
 
                     <TextView
                         android:id="@+id/textView2"
@@ -91,7 +94,7 @@
                         android:lineSpacingExtra="5dp"
                         android:text="￥189"
                         android:textColor="@color/sec_title"
-                        android:textSize="@dimen/wz_20" />
+                        android:textSize="@dimen/wz_18" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -99,7 +102,7 @@
                         android:lineSpacingExtra="5dp"
                         android:text="已售:564件"
                         android:textColor="@color/tip_font"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/wz_16" />
                 </LinearLayout>
 
                 <View
@@ -111,21 +114,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:gravity="center_vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
 
                     <TextView
+                        android:id="@+id/textView5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:lineSpacingExtra="5dp"
                         android:text="您有一张满149减10元的优惠券可用"
                         android:textColor="@color/important_title"
-                        android:textSize="@dimen/wz_20" />
+                        android:textSize="@dimen/wz_18" />
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/back" />
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/right" />
                 </LinearLayout>
 
                 <View
@@ -137,7 +145,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -150,7 +161,7 @@
                         android:layout_gravity="center_vertical"
                         android:text="7天无理由退款"
                         android:textColor="@color/tip_font"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/wz_14" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -164,7 +175,7 @@
                         android:layout_gravity="center_vertical"
                         android:text="48小时发货"
                         android:textColor="@color/tip_font"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/wz_14" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -178,7 +189,7 @@
                         android:layout_gravity="center_vertical"
                         android:text="包邮"
                         android:textColor="@color/tip_font"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/wz_14" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -200,7 +211,7 @@
                     android:padding="10dp"
                     android:text="颜色"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_18" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -211,7 +222,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -225,7 +236,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -239,7 +250,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -253,7 +264,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                 </LinearLayout>
 
@@ -263,7 +274,7 @@
                     android:padding="10dp"
                     android:text="尺码"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_18" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -274,7 +285,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -288,7 +299,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -302,7 +313,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -316,7 +327,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                 </LinearLayout>
 
@@ -331,7 +342,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -345,7 +356,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -359,7 +370,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                     <Button
                         android:layout_width="100dp"
@@ -374,7 +385,7 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_weight="1" />
+                        android:layout_weight="0.8" />
 
                 </LinearLayout>
 
@@ -398,7 +409,7 @@
                     android:padding="10dp"
                     android:text="用户评价"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_18" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -433,7 +444,7 @@
                     android:padding="10dp"
                     android:text="还不错挺好的很喜欢****"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_16" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -476,7 +487,7 @@
                     android:padding="8dp"
                     android:text="查看全部评论(1236)"
                     android:textColor="@color/important_title"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_18" />
             </LinearLayout>
 
             <View
@@ -557,7 +568,7 @@
             android:gravity="center"
             android:text="加入购物车"
             android:textColor="#ffffff"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
         <TextView
             android:id="@+id/ac_money_text_pay"
@@ -568,7 +579,7 @@
             android:gravity="center"
             android:text="立即购买"
             android:textColor="@color/important_title"
-            android:textSize="@dimen/wz_20" />
+            android:textSize="@dimen/wz_18" />
 
     </LinearLayout>
 
