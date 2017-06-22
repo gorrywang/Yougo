@@ -158,21 +158,18 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         switch (view.getId()) {
             case R.id.ac_main_rela_woman:
                 //女装
-                Toast.makeText(MainActivity.this, "女装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 0);
                 startActivity(intent);
                 break;
 
             case R.id.ac_main_rela_man:
                 //男装
-                Toast.makeText(MainActivity.this, "男装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 1);
                 startActivity(intent);
                 break;
 
             case R.id.ac_main_rela_child:
                 //童装
-                Toast.makeText(MainActivity.this, "童装", Toast.LENGTH_SHORT).show();
                 intent.putExtra("data", 2);
                 startActivity(intent);
                 break;
