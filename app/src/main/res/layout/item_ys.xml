@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="深圳 已发出"
+            android:text="您的货物已从深圳发出，请等待"
             android:textColor="@color/sec_title"
             android:textSize="@dimen/wz_14" />
     </LinearLayout>
