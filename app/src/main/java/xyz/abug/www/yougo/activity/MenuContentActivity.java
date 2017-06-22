@@ -15,6 +15,7 @@ import xyz.abug.www.yougo.fragment.ScFragment;
 import xyz.abug.www.yougo.fragment.SetFragment;
 import xyz.abug.www.yougo.fragment.ShFragment;
 import xyz.abug.www.yougo.fragment.ShdzFragment;
+import xyz.abug.www.yougo.fragment.UserFragment;
 import xyz.abug.www.yougo.fragment.XxFragment;
 import xyz.abug.www.yougo.fragment.YhqFragment;
 
@@ -91,6 +92,11 @@ public class MenuContentActivity extends AppCompatActivity {
             case 8:
                 //全部订单
                 fragment = new QbddFragment();
+                mTran.replace(R.id.ac_menucontent_frame, fragment);
+                break;
+            case 9:
+                //用户设置
+                fragment = new UserFragment();
                 mTran.replace(R.id.ac_menucontent_frame, fragment);
                 break;
         }

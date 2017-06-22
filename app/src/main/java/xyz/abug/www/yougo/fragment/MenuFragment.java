@@ -23,7 +23,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
     private View mView;
     private TextView mTxtShoucang, mTxtXiaoxi, mTxtYouhuiquan, mTxtShouhou, mTxtDizhi, mTxtSetting;
     private Button mFinishBtn;
-    private LinearLayout mLinearDfk , mLinearDsh ,mLinearQbdd;
+    private LinearLayout mLinearDfk, mLinearDsh, mLinearQbdd, mLinearUser;
 
     @Nullable
     @Override
@@ -52,6 +52,8 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
         mLinearDfk = mView.findViewById(R.id.frag_menu_linear_daifukuan);
         mLinearDsh = mView.findViewById(R.id.frag_menu_linear_daishouhuo);
         mLinearQbdd = mView.findViewById(R.id.frag_menu_linear_quanbu);
+        mLinearUser = mView.findViewById(R.id.frag_menu_linear_user);
+        mLinearUser.setOnClickListener(this);
         mLinearDfk.setOnClickListener(this);
         mLinearDsh.setOnClickListener(this);
         mLinearQbdd.setOnClickListener(this);
@@ -125,7 +127,11 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 intent.putExtra("data", 8);
                 startActivity(intent);
                 break;
-
+            case R.id.frag_menu_linear_user:
+                //用户设置
+                intent.putExtra("data", 9);
+                startActivity(intent);
+                break;
         }
     }
 }
