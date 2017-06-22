@@ -7,7 +7,6 @@
     <!--主色-->
     <color name="main">#7565ae</color>
     <!--分割线-->
-    <color name="partingline">#e1e1e1</color>
     <!--重要标题-->
     <color name="important_title">#333333</color>
     <!--二级标题-->
@@ -15,5 +14,4 @@
     <!--辅助文字-->
     <color name="tip_font">#999999</color>
     <!--背景-->
-    <color name="background_color">#f5f1ff</color>
 </resources>

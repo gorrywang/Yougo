@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="200dp"
+    android:layout_width="match_parent"
     android:id="@+id/item_show_linear"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -28,9 +28,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/main_padding"
+                android:lineSpacingExtra="8dp"
                 android:text="你好的方式打开交流方式考虑是否决定是否"
                 android:textColor="@color/important_title"
-                android:textSize="@dimen/wz_20" />
+                android:textSize="@dimen/wz_16" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +45,7 @@
                     android:padding="@dimen/main_padding"
                     android:text="￥1000"
                     android:textColor="@color/tip_font"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_14" />
 
                 <View
                     android:layout_width="0dp"
@@ -58,7 +59,7 @@
                     android:padding="@dimen/main_padding"
                     android:text="已售:99件"
                     android:textColor="@color/tip_font"
-                    android:textSize="@dimen/wz_20" />
+                    android:textSize="@dimen/wz_14" />
             </LinearLayout>
 
         </LinearLayout>
