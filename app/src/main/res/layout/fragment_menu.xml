@@ -44,7 +44,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="穷屌丝的无数次剁手"
+                        android:text="我姓王却不曾心亡"
                         android:textColor="@color/important_title"
                         android:textSize="@dimen/wz_18" />
 

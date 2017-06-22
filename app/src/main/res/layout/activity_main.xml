@@ -42,7 +42,7 @@
                     <!--图片滑动-->
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp">
+                        android:layout_height="180dp">
 
                         <android.support.v4.view.ViewPager
                             android:id="@+id/ac_main_pager_show"
@@ -64,9 +64,8 @@
                         android:id="@+id/ac_main_rela_woman"
                         android:layout_width="match_parent"
                         android:layout_height="170dp"
-                        android:layout_marginLeft="@dimen/main_padding"
-                        android:layout_marginRight="@dimen/main_padding"
-                        android:layout_marginTop="@dimen/main_padding">
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
 
                         <View
                             android:layout_width="match_parent"
@@ -177,9 +176,11 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_toRightOf="@+id/ac_main_img_3"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
 
                             <TextView
                                 android:layout_width="wrap_content"

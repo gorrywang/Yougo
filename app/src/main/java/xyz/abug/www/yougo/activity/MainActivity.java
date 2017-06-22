@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     //图片轮播
     private ViewPager mViewPager;
     private List<ImageView> mImageViewList = new ArrayList<>();
-    private int[] mPicGroup = new int[]{R.drawable.ad_1, R.drawable.ad_2, R.drawable.ad_1, R.drawable.ad_2};
+    private int[] mPicGroup = new int[]{R.drawable.ad1, R.drawable.ad2, R.drawable.ad3, R.drawable.ad4, R.drawable.ad5, R.drawable.ad6};
     private MyPagerAdapter mPagerAdapter;
     private LinearLayout mLinearPosition;
     private int mPositionNum = 0;
