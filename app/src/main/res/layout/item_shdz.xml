@@ -63,10 +63,12 @@
             android:layout_marginBottom="4dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ToggleButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/success" />
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/selector_success" />
 
 
             <TextView
@@ -80,7 +82,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/editor" />
+                android:src="@drawable/editor_white" />
 
 
             <TextView
@@ -93,7 +95,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/delete" />
+                android:src="@drawable/error" />
 
 
             <TextView

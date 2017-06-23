@@ -76,8 +76,8 @@
                 android:layout_below="@+id/ac_pay_txt_name"
                 android:layout_marginTop="8dp"
                 android:text="[家庭]广东省深圳市宝安区"
-                android:textColor="@color/important_title"
-                android:textSize="@dimen/wz_18" />
+                android:textColor="@color/sec_title"
+                android:textSize="@dimen/wz_16" />
 
             <TextView
                 android:id="@+id/ac_pay_txt_time"
@@ -86,8 +86,8 @@
                 android:layout_below="@+id/ac_pay_txt_ads"
                 android:layout_marginTop="8dp"
                 android:text="周一到周五收货"
-                android:textColor="@color/important_title"
-                android:textSize="@dimen/wz_18" />
+                android:textColor="@color/sec_title"
+                android:textSize="@dimen/wz_16" />
         </RelativeLayout>
 
         <LinearLayout
